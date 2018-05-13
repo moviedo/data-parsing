@@ -1,16 +1,19 @@
 {
-    "name": "data-parsing-app",
-    "description": "Node application used to format data and post to a server.",
-    "private": true,
-    "author": "Moviedo",
-    "version": "1.0.0",
-    "repository": "https://github.com/moviedo/data-parsing",
-    "scripts": {
-      "start": "print 'Todo'"
-    },
-    "dependencies": {
-    },
-    "devDependencies": {
-    }
-  }
-  
+  "name": "data-parsing-app",
+  "description": "Node application used to format data and post to a server.",
+  "private": true,
+  "author": "Moviedo",
+  "version": "1.0.0",
+  "repository": "https://github.com/moviedo/data-parsing",
+  "engines": {
+    "node": ">=6",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "start": "node script.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {}
+}
