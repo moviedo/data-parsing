@@ -31,13 +31,13 @@ schemaReader.on('close', () => {
   dataReader.on('line', line => {
     console.log(getParsedData(line));
 
-    // axios.post(url)
-    //   .then(res => {
-    //     console.log(response);
-    //   })
-    //   .catch(err => {
-    //     console.log(`Error: ${err}`);
-    //   });
+    axios.post(url, getParsedData(line))
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(`Error: ${err}`);
+      });
   });
 });
 
